@@ -8,4 +8,7 @@ console.log(idade);
 
 const nome = "Ricardo";
 
-let ano = 2020;
+// let ano = 2020;
+
+//não fazer
+// mes = "Janeiro";
