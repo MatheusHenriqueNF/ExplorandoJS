@@ -17,12 +17,15 @@ console.log(listaDeDestinos);
 const podeComprar = idadeComprador >= 18 || estaAcampanhada == true;
 
 let contador = 0;
+let destinoExiste = false;
 while(contador < 3){
+    
     if(listaDeDestinos[contador] == destino){
-        console.log("Destino existe");
+        destinoExiste = true;
+        break;
     }
-    else{
-        console.log("Destino não existe");
-    }
+
     contador += 1;
 }
+
+console.log("Destino exite: ", destinoExiste);
