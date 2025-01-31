@@ -29,3 +29,19 @@ while(contador < 3){
 }
 
 console.log("Destino exite: ", destinoExiste);
+
+if(podeComprar && destinoExiste){
+    console.log("Boa viagem!");
+}
+else{
+    console.log("Desculpe, não podemos te oferecer este destino.");
+}
+
+for(let i = 0 ; i < 3; i++){
+    
+    if(listaDeDestinos[i] == destino){
+        destinoExiste = true;
+        break;
+    }
+
+}
