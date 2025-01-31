@@ -6,7 +6,8 @@ const listaDeDestinos = new Array(
     `Rio de Janeiro`
 );
 
-const idadeComprador = 21;
+const idadeComprador = 15;
+const estaAcampanhada = true;
 
 console.log("Destinos possíveis:");
 console.log(listaDeDestinos);
@@ -15,14 +16,19 @@ if(idadeComprador >= 18){
     console.log("Comprador é maior de idade");
     listaDeDestinos.splice(1,1); //removendo item
 }
-else{
-    console.log("Comprador não é maior de idade e não posso vender");
-}
+else if(estaAcampanhada == true){
+        console.log("Comprador está acampanhado");
+        listaDeDestinos.splice(1,1); //removendo item
+    } else{
+    
+        console.log("Comprador não é maior de idade e não posso vender");
+
+        }
 
 console.log(listaDeDestinos);
 
-console.log(idadeComprador > 18);
-console.log(idadeComprador < 18);
-console.log(idadeComprador >= 18);
-console.log(idadeComprador <= 18);
-console.log(idadeComprador == 18);
+// console.log(idadeComprador > 18);
+// console.log(idadeComprador < 18);
+// console.log(idadeComprador >= 18);
+// console.log(idadeComprador <= 18);
+// console.log(idadeComprador == 18);
